@@ -9,6 +9,7 @@
     'security/ir.model.access.csv',
     'security/security.xml',
     'data/sequence.xml',
+    'data/mail_template.xml',
     'data/data.xml',
     'wizards/create_appointment.xml',
     'views/patient.xml',

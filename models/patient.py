@@ -65,8 +65,8 @@ class HospitalPatient(models.Model):
     notes = fields.Text(string='Notes')
     image = fields.Binary(string='image')
     name = fields.Char(string='Test')
-
-    # doctor = fields.Many2one('doctor_name', string='Doctor', help='Select the doctor for this patient.')
+    email_id = fields.Char(string="Email")
+    user_id = fields.Many2one('res.users', string="PRO")
     doctor_id = fields.Many2one('hospital.doctor', string="Doctor")
 
     doctor_gender = fields.Selection([
